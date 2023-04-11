@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<h1>Calculo de consumo</h1>
+h3: <br>
+<h3>   ¿Alcohol o gasolina?</h3>
+<script>
+    var tanque =40
+    var recorrido=480
+    document.write("Tanque: "+tanque+" litros<br>");
+    document.write("Recorrido: "+recorrido+" km<br>");
+    var consumo = recorrido/tanque; 
+    document.write("Consumo con "+recorrido+":"+consumo+" km/l<br>");
+    recorrido = 300;
+    document.write("Recorrido: "+recorrido+" km<br>");
+    consumo = recorrido/tanque;
+    document.write("Consumo con "+recorrido+":"+consumo+" km/l<br>");
+</script>
+<br>
+La mejor opcion es: <br>
+<script>
+    var tanque =40
+    var recorrido=480
+    var consumo1 = recorrido/tanque; 
+    document.write("Consumo con "+recorrido+":"+consumo1+" km/l<br>");
+    recorrido = 300;
+    var consumo2 = recorrido/tanque;
+    document.write("Consumo con "+recorrido+":"+consumo2+" km/l<br>");
+    if (consumo1<consumo2){
+        document.write("Gasolina con "+consumo1+" km/l");
+    }else{
+        document.write("Alcohol con "+consumo2+" km/l");
+    }
+</script>   
